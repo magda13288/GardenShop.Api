@@ -1,3 +1,6 @@
 <Solution>
+  <Project Path="GardenShop.Api.Application/GardenShop.Api.Application.csproj" />
+  <Project Path="GardenShop.Api.Domain/GardenShop.Api.Domain.csproj" />
+  <Project Path="GardenShop.Api.Infrastructure/GardenShop.Api.Infrastructure.csproj" />
   <Project Path="GardenShop.Api/GardenShop.Api.csproj" />
 </Solution>
