@@ -11,7 +11,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\GardenShop.Api.Domain\GardenShop.Api.Domain.csproj" />
+    <ProjectReference Include="..\GardenShop.Api.Domain\GardenShop.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Abstractions\IServices\" />
+    <Folder Include="Contracts\" />
+    <Folder Include="Services\" />
   </ItemGroup>
 
 </Project>

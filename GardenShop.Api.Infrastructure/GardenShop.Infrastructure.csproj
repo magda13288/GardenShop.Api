@@ -4,21 +4,22 @@
     <TargetFramework>net10.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="10.0.2" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="10.1.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\GardenShop.Api.Application\GardenShop.Application.csproj" />
-    <ProjectReference Include="..\GardenShop.Api.Infrastructure\GardenShop.Infrastructure.csproj" />
+    <ProjectReference Include="..\GardenShop.Api.Domain\GardenShop.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Endpoints\" />
+    <Folder Include="Repositories\" />
+    <Folder Include="Seed\" />
   </ItemGroup>
 
 </Project>

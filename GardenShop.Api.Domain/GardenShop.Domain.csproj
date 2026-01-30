@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
@@ -8,11 +8,6 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.2" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\GardenShop.Api.Application\GardenShop.Api.Application.csproj" />
-    <ProjectReference Include="..\GardenShop.Api.Domain\GardenShop.Api.Domain.csproj" />
   </ItemGroup>
 
 </Project>

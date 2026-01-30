@@ -1,6 +1,0 @@
-@GardenShop.Api.Infrastructure_HostAddress = http://localhost:5232
-
-GET {{GardenShop.Api.Infrastructure_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
