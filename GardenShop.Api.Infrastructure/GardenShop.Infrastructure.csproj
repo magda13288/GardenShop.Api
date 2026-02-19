@@ -17,9 +17,4 @@
     <ProjectReference Include="..\GardenShop.Api.Domain\GardenShop.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Repositories\" />
-    <Folder Include="Seed\" />
-  </ItemGroup>
-
 </Project>
