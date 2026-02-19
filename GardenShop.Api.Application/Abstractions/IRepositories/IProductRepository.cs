@@ -4,14 +4,14 @@ namespace GardenShop.Application.Abstractions.Persistence
 {
 	public interface IProductRepository : IRepository<Product>
 	{
-		Task<List<Product>> GetAllAsync(int? categoryId, CancellationToken ct);
-		Task<List<Product>> GetAllWithCategoryAsync(int? categoryId, CancellationToken ct);
+		Task<List<Product>> GetAllAsync(long? categoryId, CancellationToken ct);
+		Task<List<Product>> GetAllWithCategoryAsync(long? categoryId, CancellationToken ct);
 
-		Task<Product?> GetByIdWithCategoryAsync(int id, CancellationToken ct);
+		Task<Product?> GetByIdWithCategoryAsync(long id, CancellationToken ct);
 
-		Task<bool> CategoryExistsAsync(int categoryId, CancellationToken ct);
-		Task<bool> IsUsedByOrdersAsync(int productId, CancellationToken ct);
+		Task<bool> CategoryExistsAsync(long categoryId, CancellationToken ct);
+		Task<bool> IsUsedByOrdersAsync(long productId, CancellationToken ct);
 
-		Task<List<Product>> GetByIdsTrackingAsync(IEnumerable<int> ids, CancellationToken ct);
+		Task<List<Product>> GetByIdsTrackingAsync(IEnumerable<long> ids, CancellationToken ct);
 	}
 }

@@ -4,7 +4,7 @@ namespace GardenShop.Domain.Common
 {
 	public class BaseEntity
 	{
-		protected BaseEntity(int id)
+		protected BaseEntity(long id)
 		{
 			this.Id = id;
 		}
@@ -13,7 +13,7 @@ namespace GardenShop.Domain.Common
 		{
 			this.Id = 0;
 		}
-		public int Id { get; set; }
+		public long Id { get; set; }
 		public DateTimeOffset CreatedAtUtc { get; set; } = DateTimeOffset.UtcNow;
 		public DateTimeOffset? UpdatedAtUtc { get; set; }
 	}
