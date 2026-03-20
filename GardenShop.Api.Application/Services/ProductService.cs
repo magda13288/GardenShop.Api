@@ -3,6 +3,7 @@ using GardenShop.Application.Abstractions.Persistence;
 using GardenShop.Application.Exceptions;
 using GardenShop.Application.Mappings;
 using GardenShop.Domain.Entities;
+using Microsoft.Extensions.Logging;
 using static GardenShop.Application.DTO.ProductDto;
 using static GardenShop.Application.Requests.ProductRequests;
 

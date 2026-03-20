@@ -2,6 +2,7 @@
 using GardenShop.Infrastructure.Persistence;
 using GardenShop.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace GardenShop.Infrastructure
 {

@@ -6,6 +6,8 @@ using Microsoft.OpenApi;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
+
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
@@ -28,13 +30,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.MapControllers();
-
-using (var scope = app.Services.CreateScope())
-{
-	var db = scope.ServiceProvider.GetRequiredService<GardenShopDbContext>();
-	await db.Database.EnsureCreatedAsync();
-	await SeedData.SeedAsync(db);
-}
 
 app.UseHttpsRedirection();
 app.UseAuthorization();

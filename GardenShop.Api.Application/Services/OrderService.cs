@@ -5,6 +5,7 @@ using GardenShop.Application.Exceptions;
 using GardenShop.Application.Mappings;
 using GardenShop.Domain.Entities;
 using GardenShop.Domain.Enums;
+using Microsoft.Extensions.Logging;
 using static GardenShop.Application.Requests.OrderRequests;
 
 namespace GardenShop.Application.Services
