@@ -140,10 +140,6 @@ Services are registered in:
 
 MIT License
 
-## 👥 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
 ## 📧 Contact
 
 GitHub: [@magda13288](https://github.com/magda13288)
