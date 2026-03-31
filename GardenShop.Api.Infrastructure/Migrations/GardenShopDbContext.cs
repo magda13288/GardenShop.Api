@@ -13,13 +13,19 @@ namespace GardenShop.Infrastructure.Persistence
 		public DbSet<Product> Products => Set<Product>();
 		public DbSet<Order> Orders => Set<Order>();
 		public DbSet<OrderItem> OrderItems => Set<OrderItem>();
+
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
+			ArgumentNullException.ThrowIfNull(modelBuilder);
+
 			modelBuilder.Entity<Category>()
 				.HasMany(c => c.Products)
 				.WithOne(p => p.Category)
 				.HasForeignKey(p => p.CategoryId)
 				.OnDelete(DeleteBehavior.Restrict);
+
+			modelBuilder.Entity<OrderItem>()
+				.HasKey(oi => new { oi.OrderId, oi.ProductId });
 
 			modelBuilder.Entity<Order>()
 				.HasMany(o => o.Items)

@@ -35,5 +35,7 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
 
+await SeedData.SeedAsync(app);
+
 await app.RunAsync();
 
